@@ -1,0 +1,39 @@
+[debug] [2025-05-20T09:35:13.344Z] ----------------------------------------------------------------------
+[debug] [2025-05-20T09:35:13.347Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:create thinking-machine-portfolio
+[debug] [2025-05-20T09:35:13.348Z] CLI Version:   14.4.0
+[debug] [2025-05-20T09:35:13.348Z] Platform:      win32
+[debug] [2025-05-20T09:35:13.348Z] Node Version:  v22.15.1
+[debug] [2025-05-20T09:35:13.348Z] Time:          Tue May 20 2025 15:05:13 GMT+0530 (India Standard Time)
+[debug] [2025-05-20T09:35:13.349Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-20T09:35:13.631Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-20T09:35:13.633Z] > authorizing via signed-in user (dhruvbhadhotiya@gmail.com)
+[debug] [2025-05-20T09:36:05.293Z] Checked if tokens are valid: true, expires at: 1747737178193
+[debug] [2025-05-20T09:36:05.297Z] Checked if tokens are valid: true, expires at: 1747737178193
+[debug] [2025-05-20T09:36:05.300Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-05-20T09:36:05.301Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"dhruv9897","name":"thinking machine"}
+[debug] [2025-05-20T09:36:07.020Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2025-05-20T09:36:07.021Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/create_project.global.4725759480365467804"}
+[debug] [2025-05-20T09:36:07.022Z] Checked if tokens are valid: true, expires at: 1747737178193
+[debug] [2025-05-20T09:36:07.023Z] Checked if tokens are valid: true, expires at: 1747737178193
+[debug] [2025-05-20T09:36:07.024Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.4725759480365467804 [none]
+[debug] [2025-05-20T09:36:08.447Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.4725759480365467804 200
+[debug] [2025-05-20T09:36:08.448Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.4725759480365467804 {"name":"operations/create_project.global.4725759480365467804"}
+[debug] [2025-05-20T09:36:08.962Z] [Project Creation Poller] Retrying task index 0
+[debug] [2025-05-20T09:36:08.963Z] Checked if tokens are valid: true, expires at: 1747737178193
+[debug] [2025-05-20T09:36:08.963Z] Checked if tokens are valid: true, expires at: 1747737178193
+[debug] [2025-05-20T09:36:08.964Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.4725759480365467804 [none]
+[debug] [2025-05-20T09:36:09.285Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.4725759480365467804 200
+[debug] [2025-05-20T09:36:09.286Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.4725759480365467804 {"name":"operations/create_project.global.4725759480365467804","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"237984043251","projectId":"dhruv9897","lifecycleState":"ACTIVE","name":"thinking machine","createTime":"2025-05-20T09:36:04.775195Z"}}
+[debug] [2025-05-20T09:36:09.288Z] Checked if tokens are valid: true, expires at: 1747737178193
+[debug] [2025-05-20T09:36:09.288Z] Checked if tokens are valid: true, expires at: 1747737178193
+[debug] [2025-05-20T09:36:09.288Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/dhruv9897:addFirebase [none]
+[debug] [2025-05-20T09:36:10.710Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/dhruv9897:addFirebase 403
+[debug] [2025-05-20T09:36:10.711Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/dhruv9897:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-05-20T09:36:10.714Z] Request to https://firebase.googleapis.com/v1beta1/projects/dhruv9897:addFirebase had HTTP Error: 403, The caller does not have permission
+[debug] [2025-05-20T09:36:10.860Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/dhruv9897:addFirebase had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.

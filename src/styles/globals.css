@@ -76,6 +76,16 @@ body {
   animation: 
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
+  max-width: 100%; /* Ensure text stays within container on mobile */
+}
+
+/* Mobile adjustments for typewriter */
+@media (max-width: 768px) {
+  .typewriter {
+    white-space: normal;
+    animation: none;
+    border-right: none;
+  }
 }
 
 @keyframes blink-caret {

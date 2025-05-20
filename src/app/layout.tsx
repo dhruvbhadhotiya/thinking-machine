@@ -16,7 +16,7 @@ const robotoMono = Roboto_Mono({
 
 export const metadata: Metadata = {
   title: 'The Thinking Machine',
-  description: 'Exploring the Intersection of Math, AI, and Creativity',
+  description: 'A neural network-inspired portfolio',
 };
 
 export default function RootLayout({
@@ -28,6 +28,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       </head>
       <body className={`${inter.variable} ${robotoMono.variable} font-sans min-h-screen`}>
         <ThemeProvider>
